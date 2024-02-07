@@ -1,0 +1,57 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+
+<!--</LinearLayout>-->
+
+<!-- activity_add_subjects.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".AddSubjectActivity">
+
+    <TextView
+        android:id="@+id/title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Subjects"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/subject_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter subject name"
+        android:layout_below="@id/title_textview"
+        android:layout_marginTop="16dp"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/add_subject_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subject_edit_text"
+        android:layout_marginTop="16dp"
+        android:text="Add Subject" />
+
+    <ListView
+        android:id="@+id/subject_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_subject_button"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/finalize_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subject_list_view"
+        android:layout_marginTop="16dp"
+        android:text="Finalize" />
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+
+<!--</LinearLayout>-->
+
+<!-- dashboard_activity.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".DashboardActivity">
+
+    <!-- Dashboard heading -->
+    <TextView
+        android:id="@+id/dashboard_heading_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dashboard"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Section for starting a new timer -->
+    <TextView
+        android:id="@+id/start_timer_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Timer:"
+        android:textSize="20sp"
+        android:layout_below="@id/dashboard_heading_textview"
+        android:layout_marginTop="16dp"/>
+
+    <Spinner
+        android:id="@+id/subject_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/start_timer_textview"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/start_timer_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:layout_below="@id/subject_spinner"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Analytics section with mock data -->
+
+    <TextView
+        android:id="@+id/analytics_heading_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/start_timer_button"
+        android:layout_marginTop="93dp"
+        android:text="Analytics"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/subject1_analytics_textview"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/analytics_heading_textview"
+        android:layout_marginTop="8dp"
+        android:text="Subject 1: 40 minutes"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/subject2_analytics_textview"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subject1_analytics_textview"
+        android:layout_marginTop="8dp"
+        android:text="Subject 2: 25 minutes"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/subject3_analytics_textview"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subject2_analytics_textview"
+        android:layout_marginTop="8dp"
+        android:text="Subject 3: 60 minutes"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/subject4_analytics_textview"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subject3_analytics_textview"
+        android:layout_marginTop="10dp"
+        android:text="Subject 4: 15 minutes"
+        android:textSize="17sp"/>
+
+</RelativeLayout>
