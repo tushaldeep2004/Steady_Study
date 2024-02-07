@@ -1,0 +1,3 @@
+Users Collection: This drawer holds information about the users of your app, like their names and unique identifiers. Each user has their own file in this drawer. 
+Subjects Collection: This drawer stores information about the subjects that users want to study, like the subject name and any relevant details. Each subject has its own file in this drawer. 
+Study Sessions Collection: This drawer keeps track of the study sessions that users have completed, including details like which user studied which subject, the start and end times of the study session, and any notes or feedback they provided. Each study session gets a new file in this drawer. These are just high-level examples
